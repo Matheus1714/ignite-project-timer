@@ -21,7 +21,7 @@ export function History() {
               <td>20 min</td>
               <td>Há cerca de 2 meses</td>
               <td>
-                <Status statusColor="green">Concluído</Status>
+                <Status statuscolor="green">Concluído</Status>
               </td>
             </tr>
             <tr>
@@ -29,7 +29,7 @@ export function History() {
               <td>20 min</td>
               <td>Há cerca de 2 meses</td>
               <td>
-                <Status statusColor="green">Concluído</Status>
+                <Status statuscolor="red">Interrompido</Status>
               </td>
             </tr>
             <tr>
@@ -37,79 +37,7 @@ export function History() {
               <td>20 min</td>
               <td>Há cerca de 2 meses</td>
               <td>
-                <Status statusColor="red">Atrasada</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="yellow">Em andamento</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
-              </td>
-            </tr>
-            <tr>
-              <td>Tarefa</td>
-              <td>20 min</td>
-              <td>Há cerca de 2 meses</td>
-              <td>
-                <Status statusColor="green">Concluído</Status>
+                <Status statuscolor="yellow">Em andamento</Status>
               </td>
             </tr>
           </tbody>

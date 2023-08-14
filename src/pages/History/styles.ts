@@ -17,11 +17,41 @@ export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
   margin-top: 2rem;
+  overflow-y: scroll;
+  max-height: 20rem;
+
+  &::-webkit-scrollbar {
+    width: 0.374rem;
+    height: 12.625rem;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    width: 12.625rem;
+    height: 0.374rem;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme['gray-200']};
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: ${(props) => props.theme['gray-400']};
+  }
 
   table {
+    position: relative;
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
+    table-layout: fixed;
 
     th {
       background-color: ${(props) => props.theme['gray-600']};
@@ -30,6 +60,10 @@ export const HistoryList = styled.div`
       color: ${(props) => props.theme['gray-100']};
       font-size: 0.875rem;
       line-height: 1.6;
+
+      position: sticky;
+      top: 0;
+      z-index: 1;
 
       &:first-child {
         border-top-left-radius: 8px;
@@ -61,12 +95,12 @@ export const HistoryList = styled.div`
 
 const STATUS_COLORS = {
   yellow: 'yellow-500',
-  red: 'red-500',
   green: 'green-500',
+  red: 'red-500',
 } as const
 
 interface StatusProps {
-  statusColor: keyof typeof STATUS_COLORS
+  statuscolor: keyof typeof STATUS_COLORS
 }
 
 export const Status = styled.span<StatusProps>`
@@ -79,6 +113,22 @@ export const Status = styled.span<StatusProps>`
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
+    background: ${(props) => props.theme[STATUS_COLORS[props.statuscolor]]};
   }
 `
+
+// export const Status = styled.span.withConfig({
+//   shouldForwardProp: (prop) => prop === 'statuscolor',
+// })<StatusProps>`
+//   display: flex;
+//   align-items: center;
+//   gap: 0.5rem;
+
+//   &::before {
+//     content: '';
+//     width: 0.5rem;
+//     height: 0.5rem;
+//     border-radius: 50%;
+//     background: ${(props) => props.theme[STATUS_COLORS[props.statuscolor]]};
+//   }
+// `
