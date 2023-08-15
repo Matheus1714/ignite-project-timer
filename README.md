@@ -287,6 +287,18 @@ I learned a little about using ESlint and about the importance of having standar
 }
 ```
 
+```cjs
+// .eslintrc.cjs
+module.exports = {
+  ...
+  extends: [
+    ...
+    '@rocketseat/eslint-config/react'
+  ],
+  ...
+}
+```
+
 ## Acknowledgment
 
 Thanks to [Rocketseat](https://www.rocketseat.com.br/) for the content and initiatives it provides.🚀
