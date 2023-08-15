@@ -91,6 +91,10 @@ export const HistoryList = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    max-height: 100%;
+  }
 `
 
 const STATUS_COLORS = {
