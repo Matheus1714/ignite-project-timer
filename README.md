@@ -252,6 +252,7 @@ export function Router() {
 ```
 
 ```tsx
+// src/App.tsx
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
